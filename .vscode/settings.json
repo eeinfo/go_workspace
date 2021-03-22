@@ -1,0 +1,6 @@
+{
+  "go.inferGopath": false,
+  "goOutliner.enableDebugChannel": true,
+  "goOutliner.extendExplorerTab": true,
+  "code-runner.runInTerminal": true
+}
