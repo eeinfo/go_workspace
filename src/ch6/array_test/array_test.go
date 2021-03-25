@@ -18,3 +18,12 @@ func TestArrayTravel(t *testing.T) {
 		t.Log(e)
 	}
 }
+
+func TestArraySection(t *testing.T) {
+	arr3 := [...]int{1, 2, 3, 4, 5}
+	arr3_sec := arr3[1:2]
+	t.Log(arr3_sec)
+
+	arr3_sec = arr3[:]
+	t.Log(arr3_sec)
+}
