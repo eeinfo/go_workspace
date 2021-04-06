@@ -27,6 +27,6 @@ func TestSelect(t *testing.T) {
 	case ret := <-AsyncService():
 		t.Log(ret)
 	case <-time.After(time.Millisecond * 100):
-		t.Error("time out")
+		t.Error("time out!")
 	}
 }
