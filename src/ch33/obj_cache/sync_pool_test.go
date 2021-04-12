@@ -17,7 +17,7 @@ func TestSyncPool(t *testing.T) {
 	v := pool.Get().(int)
 	fmt.Println(v)
 	pool.Put(3)
-	runtime.GC() // GC 会清除sync.pool中缓存的对象
+	runtime.GC() // GC 会清除sync.pool中缓存的对象1
 	v1, _ := pool.Get().(int)
 	fmt.Println(v1)
 }
